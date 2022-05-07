@@ -29,10 +29,12 @@ footer {
     color: #888;
     font-size: 10px;
     background: rgb(242,242,242);
-    height: 80px;
 }
 .contact {
+    display: flex;
+    flex-direction: row;
     font-size: 14px;
+    align-items: center;
 }
 .contact > a {
     color: black;
@@ -63,39 +65,30 @@ li {
     .main {
         flex-direction: column;
     }
-    aside {
-        width: 100%;
+    .contact {
+        flex-direction: column;
+    }
+    .contact > .dot {
+        display: none;
     }
 }
 @media only screen and (min-width: 600px) {
     .main {
         flex-direction: column;
     }
-    aside {
-        width: 100%;
-    }
 }
 @media only screen and (min-width: 768px) {
     .main {
-        flex-direction: row;
-    }
-    aside {
-        width: 80%;
+        flex-direction: column;
     }
 }
 @media only screen and (min-width: 992px) {
     .main {
         flex-direction: row;
     }
-    aside {
-        width: 80%;
-    }
 }
 @media only screen and (min-width: 1200px) {
     .main {
         flex-direction: row;
-    }
-    aside {
-        width: 80%;
     }
 }
